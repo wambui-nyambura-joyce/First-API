@@ -403,3 +403,54 @@ nav ul li a:hover{
   .product button:hover {
     background-color: goldenrod;
   }
+
+
+  /* nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  } */
+  
+
+  .hamburger-menu {
+    display: none;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .line {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+  }
+  
+  /* Media query for small screens */
+  @media only screen and (max-width: 768px) {
+    .menu {
+      display: none;
+    }
+  
+    .hamburger-menu {
+      display: block;
+    }
+  
+    /* Additional styles for the hamburger menu */
+    .hamburger-menu .line {
+      background-color: #333;
+      /* transition: all 0.3s ease; */
+    }
+  
+    .hamburger-menu.open .line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+  
+    .hamburger-menu.open .line:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger-menu.open .line:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -7px);
+    }
+  }
